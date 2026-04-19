@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <title>問卷填寫</title>
+</head>
+<body>
+  <script>
+    const FORM_BASE_URL = "https://docs.google.com/forms/d/e/1FAIpQLSedT4S52jtm3BWL_LlAQLDEnwXxnxAny7_XfcI1hNlBZEUc7Q/viewform";
+    const ENTRY_ID = "entry.751547779";
+
+    const startTime = Date.now();
+    const url = `${FORM_BASE_URL}?${ENTRY_ID}=${startTime}&usp=pp_url`;
+
+    window.location.replace(url);
+  </script>
+  <p>正在載入問卷，請稍候...</p>
+</body>
+</html>
